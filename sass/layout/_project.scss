@@ -1,0 +1,12 @@
+.portfolio-box__project {
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+  margin-bottom: 4px;
+}
+.portfolio-box__text {
+  font-size: 16px;
+  color: var(--title-text-color);
+  line-height: calc(30 / 16);
+}

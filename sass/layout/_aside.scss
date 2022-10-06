@@ -1,0 +1,40 @@
+.aside {
+  @extend %flex;
+}
+.aside-list {
+  display: inline-flex;
+}
+.aside-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  padding-bottom: 50px;
+}
+.aside-item {
+  width: 370px;
+  padding-right: 30px;
+  &__image {
+    text-align: center;
+    justify-content: space-around;
+  }
+  &__link {
+    @extend %flex;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+    width: 370px;
+    height: 70px;
+    pointer-events: none;
+    color: var(--primary-bg-color);
+    font-weight: 700;
+    line-height: calc(16 / 14);
+    transform: translateY(-105%);
+    background: rgba(47, 48, 58, 0.8);
+  }
+}
+
+.aside-item:not(:last-child) {
+  margin-right: 30px;
+}

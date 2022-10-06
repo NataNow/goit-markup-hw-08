@@ -1,0 +1,50 @@
+body {
+  font-family: var(--primary-ff);
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  margin: 0;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+.address {
+  font-style: normal;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.accent,
+.current {
+  content: '';
+  color: var(--accent-text-color);
+}
+button {
+  cursor: pointer;
+}
+
+section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}

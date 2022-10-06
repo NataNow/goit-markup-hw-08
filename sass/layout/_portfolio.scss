@@ -1,0 +1,56 @@
+.portfolio-item {
+  border: 1px solid #eeeeee;
+}
+.portfolio-wrapper {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  &__text {
+    position: absolute;
+    @extend %flex;
+    width: 100%;
+    height: 100%;
+    transform: translateY(101%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 63px 24px;
+    color: var(--primary-bg-color);
+    border: none;
+    background-color: rgba(33, 150, 243, 0.9);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+.portfolio-item__link:hover .portfolio-wrapper__text,
+.portfolio-item__link:focus .portfolio-wrapper__text {
+  transform: translateY(0);
+}
+
+.portfolio-item:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
+}
+.portfolio-item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+}
+.portfolio-box {
+  padding: 20px;
+  color: inherit;
+  &__project {
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.06em;
+    line-height: calc(36 / 18);
+    color: var(--title-text-color);
+    color: inherit;
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    color: var(--title-list-text-color);
+  }
+}

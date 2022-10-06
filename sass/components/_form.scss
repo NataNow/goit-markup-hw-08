@@ -1,0 +1,115 @@
+.form-model {
+  padding: 40px;
+}
+.form {
+  @extend %flex;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+  color: var(--title-list-text-color);
+  width: 528px;
+  height: 581px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  background-color: var(--primary-bg-color);
+}
+
+.form-text {
+  display: inline-flex;
+  justify-content: center;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: calc(23 / 20);
+  color: var(--title-text-color);
+  width: 448px;
+  margin-bottom: 12px;
+}
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  position: relative;
+  width: 100%;
+}
+.form-label {
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  color: var(--title-list-text-color);
+  margin-bottom: 4px;
+}
+.form-input {
+  display: flex;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  height: 40px;
+  font-size: 16px;
+  padding-left: 40px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-input:hover,
+.form-input:focus,
+.form-input:focus-within {
+  border-color: var(--accent-text-color);
+  outline: none;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-field:focus-within > .form-icon {
+  content: '';
+  color: var(--accent-text-color);
+}
+.form-icon {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  width: 18px;
+  height: 18px;
+  fill: var(--title-text-color);
+}
+.form-icon:hover,
+.form-icon:focus {
+  fill: var(--accent-text-color);
+}
+
+.form-span {
+  color: var(--accent-text-color);
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent-text-color);
+}
+.check {
+  position: relative;
+  display: flex;
+  align-items: center;
+  @extend %flex;
+  font-weight: 400;
+  line-height: calc(24 / 14);
+  padding-top: 10px;
+}
+.check__box {
+  @extend %flex;
+  width: 16px;
+  height: 15px;
+  border: 1px solid;
+  border-radius: 3px;
+}
+.check__text {
+  padding-left: 7px;
+}
+
+.check__input {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.check__input:checked + .check__box {
+  border-color: transparent;
+}
+.check__input:checked + .check__box .check__icon {
+  opacity: 1;
+}
+.check__icon {
+  opacity: 0;
+}

@@ -1,0 +1,42 @@
+.work .container {
+  padding: 0;
+}
+.work {
+  margin-bottom: 94px;
+}
+.work-nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 34px;
+  margin-top: 94px;
+}
+
+.work-item:not(:last-child) {
+  margin-right: 30px;
+}
+.work-item__button {
+  padding-right: 8px;
+  color: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  color: var(--primary-text-color);
+  text-align: center;
+  font-family: var(--primary-ff);
+}
+.filter-btn {
+  padding: 6px 22px;
+  border: none;
+  color: var(--primary-text-color);
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  border: none;
+  border-radius: 4px;
+}
+.filter-btn:hover,
+.filter-btn:focus {
+  color: var(--primary-bg-color);
+  background-color: var(--accent-text-color);
+  border: none;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
