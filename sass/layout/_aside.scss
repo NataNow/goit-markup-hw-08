@@ -1,5 +1,8 @@
 .aside {
   @extend %flex;
+  @media screen and (max-width: 1200px) {
+    @include hidden;
+  }
 }
 .aside-list {
   display: inline-flex;
