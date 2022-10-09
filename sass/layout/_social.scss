@@ -1,6 +1,7 @@
 .social {
   @extend %flex;
   padding-top: 16px;
+  margin-bottom: 24px;
 }
 .social__link {
   @extend %flex;

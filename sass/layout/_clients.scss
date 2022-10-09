@@ -1,14 +1,37 @@
 .clients__list {
-  @extend %flex;
+  @media screen and (min-width: $mobile) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 .clients__item {
-  @extend %flex;
-  width: 170px;
-  height: 92px;
   border: 1px solid rgba(175, 177, 184, 1);
   border-radius: 4px;
   color: var(--title-list-text-color);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 30px;
+
+  @media screen and (min-width: $mobile) {
+    width: 210px;
+    width: calc((100% - 1 * 30px) / 2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  @media screen and (min-width: $tablet) {
+    width: 226px;
+    width: calc((100% - 2 * 30px) / 3);
+  }
+  @media screen and (min-width: $desktop) {
+    width: 170px;
+    width: calc((100% - 5 * 30px) / 6);
+  }
+}
+.clients__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .clients__icon {
   width: 106px;
@@ -16,9 +39,6 @@
   fill: currentColor;
 }
 
-.clients__item:nth-child(n-6) {
-  margin-right: 30px;
-}
 .clients__item:hover,
 .clients__item:focus {
   color: var(--accent-text-color);

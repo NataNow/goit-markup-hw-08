@@ -1,9 +1,10 @@
 .page-header .container {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     width: 768px;
+
+    display: flex;
+    align-items: center;
   }
-  display: flex;
-  align-items: center;
 }
 .header-portfolio .container {
   @media screen and (min-width: 767px) and (max-width: 1199px) {
