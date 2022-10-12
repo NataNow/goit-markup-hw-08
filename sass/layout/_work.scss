@@ -1,10 +1,7 @@
 .work .container {
   padding: 0;
 }
-.work {
-  margin-top: 60px;
-  margin-bottom: 94px;
-}
+
 .work-nav {
   @media screen and (max-width: 767px) {
     width: 100%;
@@ -14,8 +11,6 @@
   @media screen and (min-width: $tablet) {
     display: flex;
     justify-content: center;
-    margin-bottom: 34px;
-    margin-top: 94px;
   }
 }
 .work-item {

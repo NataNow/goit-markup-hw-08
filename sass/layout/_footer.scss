@@ -1,6 +1,7 @@
 .footer {
   background-color: var(--footer-bg-color);
   max-width: 1600px;
+  margin: 0 auto;
 }
 .footer .container {
   padding-top: 60px;
@@ -19,17 +20,15 @@
   }
   @media screen and (min-width: 1200px) {
     flex-wrap: nowrap;
-    margin-right: 70px;
-    margin-top: 110px;
   }
-}
-.footer-text {
-  @media screen and (min-width: $mobile) and (max-width: 1199px) {
-    display: flex;
-    text-align: center;
-    flex-direction: row;
-    margin-left: auto;
-    margin-right: auto;
+  .footer-text {
+    @media screen and (min-width: $mobile) and (max-width: 1199px) {
+      display: flex;
+      text-align: center;
+      flex-direction: row;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }
 .logo-footer {
@@ -70,6 +69,7 @@
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
 }
+
 .footer-link:hover,
 .footer-link:focus {
   background-color: var(--accent-text-color);

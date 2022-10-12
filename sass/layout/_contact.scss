@@ -1,4 +1,7 @@
 .contact {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
   @media screen and (min-width: $tablet) {
     padding-top: 0px;
     padding-bottom: 0px;
