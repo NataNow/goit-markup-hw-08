@@ -1081,19 +1081,18 @@ img {
 }
 
 .work {
+  margin-top: 60px;
   margin-bottom: 94px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .work-nav {
     width: 100%;
-    margin-right: 8px;
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
   }
 }
-@media screen and (min-width: 768px) and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .work-nav {
     display: flex;
     justify-content: center;
@@ -1102,12 +1101,19 @@ img {
   }
 }
 
+.work-item {
+  margin-bottom: 15px;
+}
+
+.work-item :first-child {
+  margin-left: 15px;
+}
+
 .work-item:not(:last-child) {
-  margin-right: 30px;
+  margin-right: 8px;
 }
 
 .work-item__button {
-  padding-right: 8px;
   color: inherit;
   font-weight: 500;
   font-size: 16px;

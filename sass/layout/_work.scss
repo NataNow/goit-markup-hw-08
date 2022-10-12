@@ -2,29 +2,32 @@
   padding: 0;
 }
 .work {
+  margin-top: 60px;
   margin-bottom: 94px;
 }
 .work-nav {
-  @media screen and (min-width: $mobile) {
+  @media screen and (max-width: 767px) {
     width: 100%;
-    margin-right: 8px;
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
   }
-  @media screen and (min-width: $tablet) and (min-width: $desktop) {
+  @media screen and (min-width: $tablet) {
     display: flex;
     justify-content: center;
     margin-bottom: 34px;
     margin-top: 94px;
   }
 }
-
+.work-item {
+  margin-bottom: 15px;
+}
+.work-item :first-child {
+  margin-left: 15px;
+}
 .work-item:not(:last-child) {
-  margin-right: 30px;
+  margin-right: 8px;
 }
 .work-item__button {
-  padding-right: 8px;
   color: inherit;
   font-weight: 500;
   font-size: 16px;
