@@ -1,6 +1,6 @@
 .aside {
   @extend %flex;
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1199px) {
     @include hidden;
   }
 }
@@ -16,7 +16,6 @@
 }
 .aside-item {
   width: 370px;
-  padding-right: 30px;
   &__image {
     text-align: center;
     justify-content: space-around;

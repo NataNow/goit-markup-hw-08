@@ -782,7 +782,7 @@ img {
   background-color: #f5f4fa;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .aside {
     position: absolute;
     width: 1px;
@@ -811,7 +811,6 @@ img {
 
 .aside-item {
   width: 370px;
-  padding-right: 30px;
 }
 .aside-item__image {
   text-align: center;
