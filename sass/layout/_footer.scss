@@ -1,9 +1,6 @@
 .footer {
   background-color: var(--footer-bg-color);
   max-width: 1600px;
-  @media screen and (min-width: $mobile) {
-    height: 603px;
-  }
 }
 .footer .container {
   padding-top: 60px;
