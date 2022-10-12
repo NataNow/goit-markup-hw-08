@@ -5,10 +5,19 @@
   margin-bottom: 94px;
 }
 .work-nav {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 34px;
-  margin-top: 94px;
+  @media screen and (min-width: $mobile) {
+    width: 100%;
+    margin-right: 8px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: $tablet) and (min-width: $desktop) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 34px;
+    margin-top: 94px;
+  }
 }
 
 .work-item:not(:last-child) {

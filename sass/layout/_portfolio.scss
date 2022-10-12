@@ -1,5 +1,37 @@
+.portfolio {
+  padding-top: 0;
+  padding-bottom: 0;
+  @media screen and (min-width: $desktop) {
+    justify-content: space-between;
+    margin-top: 34px;
+    margin-bottom: 94px;
+  }
+  @media screen and (min-width: $mobile) {
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: $tablet) {
+    margin-top: 14px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
 .portfolio-item {
   border: 1px solid #eeeeee;
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 1 * 30px) / 2);
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  @media screen and (min-width: $desktop) {
+    width: calc((100% - 2 * 30px) / 3);
+    justify-content: space-between;
+  }
 }
 .portfolio-wrapper {
   display: flex;
@@ -26,16 +58,6 @@
   transform: translateY(0);
 }
 
-.portfolio-item:not(:nth-last-child(-n + 3)) {
-  margin-bottom: 30px;
-}
-.portfolio-item:not(:nth-child(3n)) {
-  margin-right: 30px;
-}
-.portfolio {
-  display: flex;
-  flex-wrap: wrap;
-}
 .portfolio-box {
   padding: 20px;
   color: inherit;

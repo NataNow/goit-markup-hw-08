@@ -20,8 +20,8 @@
   </head>
 
   <body>
-    <!--Шапка сторінки-->
-    <!-- <header class="page-header">
+    <!-- Шапка сторінки -->
+    <header class="page-header">
       <div class="container">
         <nav class="navigation">
           <a href="./index.html" class="logo-link"> <span class="accent">Web</span>Studio </a>
@@ -58,7 +58,76 @@
           </li>
         </ul>
       </div>
-    </header> -->
+      <div class="header__mobile">
+        <a class="header__logo logo" href="./index.html">
+          <span class="logo__decor">Web</span>Studio</a
+        >
+
+        <div class="mobile-menu">
+          <nav class="mobile-menu__navigations">
+            <ul class="mobile-menu__list">
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link mobile-menu__link-current" href="#">Студія</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="#">Портфоліо</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="#">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="header__contacts contacts">
+            <li class="contacts__item">
+              <a href="contacts__link" href="mailto:info@devstudio.com">
+                <svg class="contacts__icons contacts__icons-mail" width="16" height="12">
+                  <use href="./img/icons.svg#icon-mail"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="contacts__item">
+              <a href="contacts__link" href="tel:+380961111111">
+                <svg class="contacts__icons contacts__icons-phone" width="10" height="16">
+                  <use href="./img/icons.svg#icon-phone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+          <ul class="header__networks networks">
+            <li class="networks__item">
+              <a class="networks__link" target="_blank" href="https://www.instagram.com/"
+                >Instagram</a
+              >
+            </li>
+            <li class="networks__item">
+              <a class="networks__link" target="_blank" href="https://www.twitter.com/">Twitter</a>
+            </li>
+            <li class="networks__item">
+              <a class="networks__link" target="_blank" href="https://www.facebook.com/"
+                >Facebook</a
+              >
+            </li>
+            <li class="networks__item">
+              <a class="networks__link" target="_blank" href="https://www.linkedin.com/"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </div>
+        <button type="button" class="mobile-menu__btn">
+          <svg width="40" height="40" aria-label="Кнопка мобільного меню">
+            <use
+              class="mobile-menu__open"
+              aria-expanded="false"
+              href="./img/icons.svg#icon-menu_40px"
+            ></use>
+            <use class="mobile-menu_close" href="./img/icons.svg#icon-close_40px"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
     <main>
       <section class="hero">
         <div class="hero__container">
@@ -431,7 +500,7 @@
           </ul>
         </div>
       </section>
-      <div class="backdrop is-hidden" data-modal>
+      <div class="backdrop is-hidden" data-modal> 
         <!--<button data-open-model>відкрити модалку</button>-->
         <div class="model">
           <form class="form-model">
@@ -442,7 +511,7 @@
               <svg class="form-icon">
                 <use href="./img/icons.svg#icon-name"></use>
               </svg>
-            </div>
+            </div> 
 
             <div class="form-field">
               <label class="form-label" for="tel">Телефон</label>
@@ -488,84 +557,90 @@
         </div>
       </div>
     </main>
+  
+ 
     <!--Футер-->
 
-    <footer class="footer">
+     <footer class="footer">
       <div class="container">
-        <div class="footer-text">
-          <a class="footer-name logo-link" href="./index.html"
-            ><span class="accent">Web</span><span class="logo-footer">Studio</span></a
-          >
-          <address>
-            <ul class="footer-adres__item">
-              <li class="footer-adres__link">
-                <a
-                  class="location"
-                  href="https://goo.gl/maps/q275asniq8FiggVd8"
-                  target="_blank"
-                  rel="nofollow noreferer noopener"
-                  >м. Київ, пр-т Лесі Українки, 26</a
-                >
+        <div class="footer-iner">
+          <div>
+            <a class="footer-name logo-link" href="./index.html"
+              ><span class="accent">Web</span><span class="logo-footer">Studio</span></a
+            >
+            <address>
+              <ul class="footer-adres">
+                <li class="footer-adres__item">
+                  <a
+                    class="location"
+                    href="https://goo.gl/maps/q275asniq8FiggVd8"
+                    target="_blank"
+                    rel="nofollow noreferer noopener"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li class="footer-adres__item">
+                  <a class="footer-adres__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+                <li class="footer-adres__item">
+                  <a class="footer-adres__link" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer-nav">
+            <p class="footer-form">ПРИЄДНУЙТЕСЬ</p>
+            <ul class="footer-nav__social">
+              <li class="footer-wapper">
+                <a class="footer-link" href="https://www.instagram.com/">
+                  <svg class="footer-icons" width="20" height="20">
+                    <use href="./img/icons.svg#icon-instagram-2"></use>
+                  </svg>
+                </a>
+              </li> 
+              <li class="footer-wapper">
+                <a class="footer-link" href="https://www.twitter.com/">
+                  <svg class="footer-icons" width="20" height="20">
+                    <use href="./img/icons.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer-adres__link">
-                <a class="footer-contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              <li class="footer-wapper">
+                <a class="footer-link" href="https://www.facebook.com/">
+                  <svg class="footer-icons" width="20" height="20">
+                    <use href="./img/icons.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer-adres__link">
-                <a class="footer-contacts" href="tel:+380961111111">+38 096 111 11 11</a>
+              <li class="footer-wapper">
+                <a class="footer-link" href="https://www.linkedin.com/">
+                  <svg class="footer-icons" width="20" height="20">
+                    <use href="./img/icons.svg#icon-linkedin-1"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="footer-nav">
-          <h3 class="footer-nav__line">ПРИЄДНУЙТЕСЬ</h3>
-          <ul class="footer-nav__social">
-            <li class="footer-wapper">
-              <a class="footer-link" href="https://www.instagram.com/">
-                <svg class="footer-icons" width="20" height="20">
-                  <use href="./img/icons.svg#icon-instagram-2"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-wapper">
-              <a class="footer-link" href="https://www.twitter.com/">
-                <svg class="footer-icons" width="20" height="20">
-                  <use href="./img/icons.svg#icon-twitter-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-wapper">
-              <a class="footer-link" href="https://www.facebook.com/">
-                <svg class="footer-icons" width="20" height="20">
-                  <use href="./img/icons.svg#icon-facebook-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-wapper">
-              <a class="footer-link" href="https://www.linkedin.com/">
-                <svg class="footer-icons" width="20" height="20">
-                  <use href="./img/icons.svg#icon-linkedin-1"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <form class="footer-data">
-          <h3 class="footer-form">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</h3>
-          <div class="footer-item">
-            <input class="footer-input" type="email" name="mail" id="mail" placeholder="E-mail" />
-            <label class="footer-label" for="mail"></label>
-
-            <button class="footer-submit" type="submit">
-              Підписатися
-              <svg class="footer-icon">
-                <use href="./img/icons.svg#icon-send"></use>
-              </svg>
-            </button>
           </div>
-        </form>
+          <div class="footer-item">
+            <p class="footer-form">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</p>
+             <form class="footer-data">
+              <input class="footer-input" type="email" name="mail" id="mail" placeholder="E-mail" />
+              <label class="footer-label" for="mail"></label>
+
+              <button class="footer-submit" type="submit">
+                Підписатися
+                <svg class="footer-icon">
+                  <use href="./img/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </footer>
 
     <script src="./modal.js"></script>
-  </body>
+
+    <script src="js/mobile-menu.js"></script>
+  </body> 
 </html>

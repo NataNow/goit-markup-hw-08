@@ -1,7 +1,11 @@
 .team {
+  width: 100%;
   padding-bottom: 94px;
   padding-top: 94px;
   background-color: var(--bg-portf-color);
+  @media screen and (min-width: $mobile) {
+    margin-bottom: 60px;
+  }
 }
 .team__list {
   @media screen and (min-width: $tablet) {

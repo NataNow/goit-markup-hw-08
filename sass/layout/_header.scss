@@ -7,7 +7,7 @@
   }
 }
 .header-portfolio .container {
-  @media screen and (min-width: 767px) and (max-width: 1199px) {
+  @media screen and (min-width: 767px) and (min-width: 1199px) {
     display: flex;
     align-items: center;
   }
@@ -15,4 +15,9 @@
 .header-portfolio {
   height: 80px;
   border-bottom: 1px solid #ececec;
+}
+.header-tablet {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }

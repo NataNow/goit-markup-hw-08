@@ -43,16 +43,12 @@ html {
 button {
   cursor: pointer;
 }
-
-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+img {
+  max-width: 100%;
 }
-// .cards-set {
-//   display: flex;
-//   flex-wrap: wrap;
-//   gap: var(--indent);
-// }
-// // .cards-item {
-// //   flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
-// // }
+section {
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
