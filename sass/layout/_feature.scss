@@ -1,8 +1,6 @@
 .feature {
   text-align: left;
   padding-bottom: 0px;
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 .feature-list {
   @media screen and (min-width: $tablet) {
@@ -37,6 +35,9 @@
     margin-bottom: 10px;
     color: var(--primary-text-color);
     color: inherit;
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
   }
   &__text {
     font-size: 14px;

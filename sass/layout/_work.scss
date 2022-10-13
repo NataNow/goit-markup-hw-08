@@ -3,23 +3,21 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    margin: 60px 0;
+    margin-top: -21px;
+    margin-bottom: 40px;
   }
   @media screen and (min-width: $tablet) {
     display: flex;
     justify-content: center;
-    margin-top: 60px;
     margin-bottom: 30px;
   }
 }
 .work-item {
+  margin-right: 8px;
   @media screen and (max-width: 767px) {
     margin-top: 21px;
-    margin-right: 30px;
   }
-  @media screen and (min-width: $tablet) {
-    margin-right: 8px;
-  }
+
   .work-item__button {
     color: inherit;
     font-weight: 500;

@@ -78,6 +78,17 @@
   letter-spacing: 0.02em;
   color: var(--title-list-text-color);
 }
+.contacts__link-curs {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: calc(40 / 34);
+  letter-spacing: 0.02em;
+  color: var(--accent-text-color);
+  @media screen and (max-width: 480) {
+    font-size: 30px;
+    line-height: calc(38 / 30);
+  }
+}
 .contacts__link {
   white-space: nowrap;
 }
@@ -106,12 +117,10 @@
 
   &:not(:last-child) {
     padding-right: 10px;
+    margin-right: 10px;
     border-right-width: 1px;
     border-right-style: solid;
     border-right-color: rgba(33, 33, 33, 0.2);
-  }
-  &:not(:first-child) {
-    padding-left: 10px;
   }
 }
 
@@ -130,7 +139,7 @@
     }
   }
   .header__networks {
-    justify-content: center;
+    flex-wrap: wrap;
   }
   .networks__item {
     font-size: 4vw;

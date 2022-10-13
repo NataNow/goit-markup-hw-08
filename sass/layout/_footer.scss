@@ -42,16 +42,14 @@
 .footer-adres__item {
   font-weight: 400;
   line-height: calc(24 / 14);
-  color: var(--primary-bg-color);
+  color: var(--title-list-text-color);
   font-weight: 400;
   list-style: none;
   font-style: normal;
   text-align: center;
+  margin-bottom: 8px;
 
   &__link {
-    @media screen and (min-width: $mobile) {
-      margin-bottom: 8px;
-    }
     width: 231px;
   }
 }
