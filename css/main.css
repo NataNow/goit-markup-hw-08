@@ -125,7 +125,7 @@ body.model-open {
   margin-right: 93px;
   font-family: var(--secondary-ff);
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   text-align: center;
   line-height: 1.1923076923;
   color: var(--logo-link);
@@ -143,6 +143,7 @@ body.model-open {
 @media screen and (min-width: 1200px) {
   .logo-link {
     padding: 24px 0;
+    font-size: 26px;
   }
 }
 
@@ -250,7 +251,7 @@ body.model-open {
 
 .header__mobile {
   display: flex;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   flex-direction: column;
@@ -281,7 +282,7 @@ body.model-open {
 .mobile-menu__btn {
   position: absolute;
   right: 15px;
-  top: 10px;
+  top: 20px;
   display: block;
   width: 40px;
   height: 40px;
@@ -299,6 +300,12 @@ body.model-open {
   .mobile-menu__btn {
     display: none;
   }
+}
+
+.mobile-menu__navigations {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .mobile-menu__item {
@@ -622,12 +629,6 @@ body.model-open {
   border: none;
 }
 
-@media screen and (max-width: 767px) {
-  .page-header {
-    position: relative;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .page-header .container {
     display: flex;
@@ -675,6 +676,7 @@ body.model-open {
 @media screen and (max-width: 767px) {
   .navigation {
     justify-content: space-between;
+    position: relative;
   }
 }
 
@@ -801,12 +803,7 @@ body.model-open {
   text-align: left;
   padding-bottom: 0px;
   padding-top: 94px;
-}
-@media screen and (min-width: 768px) {
-  .feature {
-    margin-top: 60px;
-    margin-bottom: 60px;
-  }
+  padding-bottom: 94px;
 }
 
 @media screen and (min-width: 768px) {
@@ -814,18 +811,21 @@ body.model-open {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 30px;
   }
 }
 
 .feature-item {
   max-width: 450px;
 }
+@media screen and (max-width: 767px) {
+  .feature-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
 @media screen and (min-width: 768px) {
   .feature-item {
     width: calc((100% - 30px) / 2);
-  }
-  .feature-item :nth-child(2n+2) {
-    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
