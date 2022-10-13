@@ -353,10 +353,10 @@ body.model-open {
   letter-spacing: 0.02em;
   color: var(--accent-text-color);
 }
-@media screen and (max-width: 480) {
+@media screen and (max-width: 480px) {
   .contacts__link-curs {
-    font-size: 30px;
-    line-height: 1.2666666667;
+    font-size: 25px;
+    line-height: 1.2;
   }
 }
 
