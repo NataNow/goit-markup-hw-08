@@ -95,6 +95,10 @@ img {
   }
 }
 
+body.model-open {
+  overflow: hidden;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -167,6 +171,7 @@ img {
   transition: all 250ms;
   visibility: visible;
   background-color: rgba(0, 0, 0, 0.1);
+  overflow-y: scroll;
 }
 
 .is-hidden {
@@ -625,6 +630,12 @@ img {
   color: var(--primary-bg-color);
   padding: 10px 32px;
   border: none;
+}
+
+@media screen and (max-width: 767px) {
+  .page-header {
+    position: relative;
+  }
 }
 
 @media screen and (min-width: 768px) {
