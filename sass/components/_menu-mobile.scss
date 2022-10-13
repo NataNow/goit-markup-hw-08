@@ -64,7 +64,6 @@
   color: var(--primary-text-color);
 }
 .mobile-menu__link-current {
-  padding: 8px;
   color: var(--accent-text-color);
 }
 .header__contacts {
@@ -120,9 +119,7 @@
   .mobile-menu {
     padding: 9vw;
   }
-  .mobile-menu__item {
-    width: calc((100% - 3 * 30px) / 4);
-  }
+
   .mobile-menu__link {
     font-size: 8vw;
   }
