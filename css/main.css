@@ -281,7 +281,7 @@ body.model-open {
 
 .mobile-menu__btn {
   position: absolute;
-  right: 15px;
+  right: 0px;
   top: 20px;
   display: block;
   width: 40px;
@@ -321,7 +321,6 @@ body.model-open {
 }
 
 .mobile-menu__link-current {
-  padding: 8px;
   color: var(--accent-text-color);
 }
 
@@ -382,9 +381,6 @@ body.model-open {
 @media screen and (max-width: 479px) {
   .mobile-menu {
     padding: 9vw;
-  }
-  .mobile-menu__item {
-    width: calc((100% - 90px) / 4);
   }
   .mobile-menu__link {
     font-size: 8vw;
@@ -1149,37 +1145,35 @@ body.model-open {
   color: var(--title-list-text-color);
 }
 
-.work .container {
-  padding: 0;
-}
-
 @media screen and (max-width: 767px) {
   .work-nav {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    margin: 60px 0;
   }
 }
 @media screen and (min-width: 768px) {
   .work-nav {
     display: flex;
     justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
   }
 }
 
-.work-item {
-  margin-bottom: 15px;
+@media screen and (max-width: 767px) {
+  .work-item {
+    margin-top: 21px;
+    margin-right: 30px;
+  }
 }
-
-.work-item :first-child {
-  margin-left: 15px;
+@media screen and (min-width: 768px) {
+  .work-item {
+    margin-right: 8px;
+  }
 }
-
-.work-item:not(:last-child) {
-  margin-right: 8px;
-}
-
-.work-item__button {
+.work-item .work-item__button {
   color: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -1188,8 +1182,7 @@ body.model-open {
   text-align: center;
   font-family: var(--primary-ff);
 }
-
-.filter-btn {
+.work-item .filter-btn {
   padding: 6px 22px;
   border: none;
   color: var(--primary-text-color);
@@ -1198,9 +1191,8 @@ body.model-open {
   border: none;
   border-radius: 4px;
 }
-
-.filter-btn:hover,
-.filter-btn:focus {
+.work-item .filter-btn:hover,
+.work-item .filter-btn:focus {
   color: var(--primary-bg-color);
   background-color: var(--accent-text-color);
   border: none;
@@ -1500,12 +1492,20 @@ body.model-open {
   background-color: var(--accent-text-color);
   width: 200px;
   height: 50px;
-  margin-left: 12px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 12px;
+  }
 }
 
 .footer-icon {
   width: 24px;
   height: 24px;
+  margin-left: 8px;
   fill: var(--primary-bg-color);
 }
 
