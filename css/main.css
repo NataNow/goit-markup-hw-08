@@ -528,24 +528,17 @@ body.model-open {
 }
 
 .hero {
-  text-align: center;
-}
-@media screen and (min-width: 768px) {
-  .hero {
-    padding-top: 0px;
-  }
-}
-
-.hero__container {
   max-width: 1600px;
   margin: 0 auto;
+  text-align: center;
   background-color: var(--footer-bg-color);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/header.jpg);
 }
 @media screen and (max-width: 767px) {
-  .hero__container {
+  .hero {
     max-width: 480px;
     height: 400px;
     padding-top: 118px;
@@ -553,12 +546,12 @@ body.model-open {
   }
 }
 @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
-  .hero__container {
+  .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/header-mob.jpg);
   }
 }
 @media screen and (min-width: 768px) {
-  .hero__container {
+  .hero {
     width: 768px;
     padding-top: 118px;
     padding-bottom: 118px;
@@ -566,12 +559,12 @@ body.model-open {
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .hero__container {
+  .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/header-tab@2x.jpg);
   }
 }
 @media screen and (min-width: 1199px) {
-  .hero__container {
+  .hero {
     max-width: 1600px;
     width: 100%;
     min-height: 600px;
@@ -583,7 +576,7 @@ body.model-open {
   }
 }
 @media screen and (min-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 1199px) and (min-resolution: 2dppx) {
-  .hero__container {
+  .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/header-desktop@2x.jpg);
   }
 }

@@ -1,16 +1,12 @@
 .hero {
-  text-align: center;
-  @media screen and (min-width: $tablet) {
-    padding-top: 0px;
-  }
-}
-.hero__container {
   max-width: 1600px;
   margin: 0 auto;
+  text-align: center;
+
   background-color: var(--footer-bg-color);
   background-repeat: no-repeat;
   background-size: cover;
-
+  background-position: center;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../img/header.jpg);
 
@@ -27,6 +23,7 @@
         url(../img/header-mob.jpg);
     }
   }
+
   @media screen and (min-width: 768px) {
     width: 768px;
     padding-top: 118px;
@@ -58,6 +55,7 @@
     }
   }
 }
+
 .hero__title {
   text-align: center;
   letter-spacing: 0.06em;
