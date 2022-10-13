@@ -1,21 +1,20 @@
 .portfolio {
   padding-top: 0;
   padding-bottom: 0;
-  @media screen and (min-width: $desktop) {
-    justify-content: space-between;
-    margin-top: 34px;
-    margin-bottom: 94px;
-  }
+
   @media screen and (min-width: $mobile) {
     margin-top: 40px;
     margin-bottom: 60px;
   }
   @media screen and (min-width: $tablet) {
     margin-top: 14px;
-    margin-bottom: 60px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-top: 34px;
+    margin-bottom: 94px;
   }
 }
 

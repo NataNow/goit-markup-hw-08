@@ -46,6 +46,10 @@ button {
 img {
   max-width: 100%;
 }
+picture img {
+  width: 100%;
+}
+
 section {
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
