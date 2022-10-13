@@ -2,7 +2,10 @@
   text-align: left;
   padding-bottom: 0px;
   padding-top: 94px;
-
+  @media screen and (min-width: $tablet) {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
 }
 .feature-list {
   @media screen and (min-width: $tablet) {
@@ -13,9 +16,12 @@
 }
 
 .feature-item {
-  width: 450px;
+  max-width: 450px;
   @media screen and (min-width: $tablet) {
     width: calc((100% - 1 * 30px) / 2);
+    :nth-child(2n + 2) {
+      margin-bottom: 30px;
+    }
   }
 
   @media screen and (min-width: $desktop) {

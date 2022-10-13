@@ -29,17 +29,26 @@
     }
   }
 }
-
+.menu-tad {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    width: 100%;
+  }
+}
 .mobile-menu__btn {
-  display: block;
-  position: absolute;
-  z-index: 20;
-  top: 10px;
-  right: 15px;
-  width: 40px;
-  height: 40px;
-  margin: 0;
-  padding: 0;
+  @media screen and (max-width: 767px) {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+  }
+  @media screen and (min-width: $tablet) {
+  }
+
   border: none;
   background-color: transparent;
   fill: currentColor;

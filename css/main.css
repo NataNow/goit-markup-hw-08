@@ -280,20 +280,32 @@ body.model-open {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .menu-tad {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu-tad {
+    display: flex;
+    width: 100%;
+  }
+}
+
 .mobile-menu__btn {
-  display: block;
-  position: absolute;
-  z-index: 20;
-  top: 10px;
-  right: 15px;
-  width: 40px;
-  height: 40px;
-  margin: 0;
-  padding: 0;
   border: none;
   background-color: transparent;
   fill: currentColor;
   color: var(--title-text-color);
+}
+@media screen and (max-width: 767px) {
+  .mobile-menu__btn {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+  }
 }
 .mobile-menu__btn:hover {
   color: var(--accent-text-color);
@@ -670,7 +682,7 @@ body.model-open {
 }
 @media screen and (max-width: 767px) {
   .navigation {
-    display: none;
+    justify-content: space-between;
   }
 }
 
@@ -794,6 +806,12 @@ body.model-open {
   padding-bottom: 0px;
   padding-top: 94px;
 }
+@media screen and (min-width: 768px) {
+  .feature {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .feature-list {
@@ -804,11 +822,14 @@ body.model-open {
 }
 
 .feature-item {
-  width: 450px;
+  max-width: 450px;
 }
 @media screen and (min-width: 768px) {
   .feature-item {
     width: calc((100% - 30px) / 2);
+  }
+  .feature-item :nth-child(2n+2) {
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -912,7 +933,7 @@ body.model-open {
 }
 
 .team__item {
-  width: 450px;
+  max-width: 450px;
   margin-top: 30px;
   text-align: center;
   display: inline-block;
